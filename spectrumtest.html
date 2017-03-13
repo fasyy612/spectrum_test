@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Spectrum Test</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+    <script src="spectrumtest.json"></script>
+    <script src="spectrumtest.js"></script>
+    <link rel="stylesheet" href="spectrumtest.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Data Table</h1>
+        <input id="search-input" placeholder="Search for names..." />
+
+        <table id="dataTable" class="hovertable">
+            <tr>
+                <th></th>
+                <th onclick="sortTable(0)">Name</th>
+                <th onclick="sortTable(1)">Age</th>
+                <th>Mobile</th>
+                <th>Number of Friends</th>
+                <th colspan="5">Tags</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
